@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Db</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Welcome Meal Db</h1>
+      <div class="my-5 " id="meal-details" >
+
+      </div>
+      <div class="my-5 justify-content-center align-items-center">
+        <form class="d-flex" role="search" onsubmit="handleSearch(event)">
+          <input
+            class="form-control me-2"
+            type="text"
+            placeholder="Enter Your Food Name"
+            id="search"
+          />
+          <button class="btn btn-success mx-2" id="search-btn" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <div class="container">
+        <div class="row" id="meal-container" >
+            
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
